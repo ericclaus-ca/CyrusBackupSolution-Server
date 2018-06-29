@@ -40,7 +40,7 @@
     )
 
     # Add Veeam Powershell snapin
-    Asnp VeeamPSSnapin
+    Add-PSSnapin VeeamPSSnapin
 
     # Secure password string file containing the encryption key for the backup
     $encryptionKeyFile = "$PSScriptRoot\1539586380"
@@ -53,7 +53,7 @@
 
     foreach ($vmName in $vmNames) {
         $vm = Find-VBRHvEntity -Name $vmName -Server $hypervisor
-        echo "$($vm.Path)"
+        Write-Output "$($vm.Path)"
         $backupJob = Start-VBRZip -Entity $vm -Folder $backupDirectory -Compression $CompressionLevel -DisableQuiesce:($DisableQuiesce) -EncryptionKey $encryptionKey
     }
 }
