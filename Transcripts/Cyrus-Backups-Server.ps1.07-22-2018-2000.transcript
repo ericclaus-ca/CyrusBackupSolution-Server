@@ -1,0 +1,155 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180722200002
+Username: CYRUS1\Administrator
+RunAs User: CYRUS1\Administrator
+Machine: CYRUS1 (Microsoft Windows NT 10.0.14393.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE C:\Scripts\Cyrus-Backup-Server\Cyrus-Backups-Server.ps1
+Process ID: 7956
+PSVersion: 5.1.14393.206
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14393.206
+BuildVersion: 10.0.14393.206
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Scripts\Cyrus-Backup-Server\Transcripts\Cyrus-Backups-Server.ps1.07-22-2018-2000.transcript
+
+
+Path          : \\localhost\root\cimv2:Win32_Volume.DeviceID="\\\\?\\Volume{9aafdd9d-0000-0000-000
+                0-800000000000}\\"
+RelativePath  : Win32_Volume.DeviceID="\\\\?\\Volume{9aafdd9d-0000-0000-0000-800000000000}\\"
+Server        : localhost
+NamespacePath : root\cimv2
+ClassName     : Win32_Volume
+IsClass       : False
+IsInstance    : True
+IsSingleton   : False
+
+Path          : \\localhost\root\cimv2:Win32_Volume.DeviceID="\\\\?\\Volume{9aafdd9d-0000-0000-009
+                0-a80cf9010000}\\"
+RelativePath  : Win32_Volume.DeviceID="\\\\?\\Volume{9aafdd9d-0000-0000-0090-a80cf9010000}\\"
+Server        : localhost
+NamespacePath : root\cimv2
+ClassName     : Win32_Volume
+IsClass       : False
+IsInstance    : True
+IsSingleton   : False
+
+192.168.90.90\ad3
+192.168.90.90\Centurion1
+192.168.90.90\CyrusClient1
+192.168.90.90\Dokuwiki1
+192.168.90.90\EP-MG1
+192.168.90.90\FortiClientEMS1
+192.168.90.90\FruitServer1
+192.168.90.90\Pandora
+192.168.90.90\Print1
+192.168.90.90\spiceworks1
+192.168.90.90\Sync1
+192.168.90.90\WSUS
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+**********************
+Windows PowerShell transcript end
+End time: 20180722224358
+**********************

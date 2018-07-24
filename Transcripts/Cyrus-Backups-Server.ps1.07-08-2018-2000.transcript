@@ -1,0 +1,404 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180708200001
+Username: CYRUS1\Administrator
+RunAs User: CYRUS1\Administrator
+Machine: CYRUS1 (Microsoft Windows NT 10.0.14393.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE C:\Scripts\Cyrus-Backup-Server\Cyrus-Backups-Server.ps1
+Process ID: 13524
+PSVersion: 5.1.14393.206
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14393.206
+BuildVersion: 10.0.14393.206
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Scripts\Cyrus-Backup-Server\Transcripts\Cyrus-Backups-Server.ps1.07-08-2018-2000.transcript
+
+
+Path          : \\localhost\root\cimv2:Win32_Volume.DeviceID="\\\\?\\Volume{9aafcb0c-0000-0000-000
+                0-800000000000}\\"
+RelativePath  : Win32_Volume.DeviceID="\\\\?\\Volume{9aafcb0c-0000-0000-0000-800000000000}\\"
+Server        : localhost
+NamespacePath : root\cimv2
+ClassName     : Win32_Volume
+IsClass       : False
+IsInstance    : True
+IsSingleton   : False
+
+Path          : \\localhost\root\cimv2:Win32_Volume.DeviceID="\\\\?\\Volume{9aafcb0c-0000-0000-008
+                0-f2e4e6010000}\\"
+RelativePath  : Win32_Volume.DeviceID="\\\\?\\Volume{9aafcb0c-0000-0000-0080-f2e4e6010000}\\"
+Server        : localhost
+NamespacePath : root\cimv2
+ClassName     : Win32_Volume
+IsClass       : False
+IsInstance    : True
+IsSingleton   : False
+
+192.168.90.90\ad3
+192.168.90.90\Centurion1
+192.168.90.90\CyrusClient1
+192.168.90.90\Dokuwiki1
+192.168.90.90\EP-MG1
+192.168.90.90\FortiClientEMS1
+192.168.90.90\FruitServer1
+192.168.90.90\Pandora
+192.168.90.90\Print1
+192.168.90.90\spiceworks1
+192.168.90.90\Sync1
+192.168.90.90\WSUS
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+Remove-Item : Cannot remove item V:\VM_Backup\CanNotDelete\delete\DokuWiki-v2-flat.vmdk.071215082913.tmp: The file or 
+directory is corrupted and unreadable.
+
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (DokuWiki-v2-flat.vmdk.071215082913.tmp:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item
+V:\VM_Backup\CanNotDelete\delete\DokuWiki-v2-flat.vmdk.071215082913.tmp: The file or directory is
+corrupted and unreadable.
+
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (DokuWiki-v2-flat.vmdk.071215082913.tmp:FileInfo) [Remo
+   ve-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveIte
+   mCommand
+Remove-Item : Directory V:\VM_Backup\CanNotDelete\delete cannot be removed because it is not empty.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (V:\VM_Backup\CanNotDelete\delete:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : DirectoryNotEmpty,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Directory V:\VM_Backup\CanNotDelete\delete cannot be removed because it is not
+empty.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (V:\VM_Backup\CanNotDelete\delete:DirectoryInfo) [Remov
+   e-Item], IOException
+    + FullyQualifiedErrorId : DirectoryNotEmpty,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+Remove-Item : Cannot find path 'V:\VM_Backup\CanNotDelete\delete\DokuWiki-v2-flat.vmdk.071215082913.tmp' because it 
+does not exist.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (V:\VM_Backup\Ca...71215082913.tmp:String) [Remove-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot find path
+'V:\VM_Backup\CanNotDelete\delete\DokuWiki-v2-flat.vmdk.071215082913.tmp' because it does not
+exist.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (V:\VM_Backup\Ca...71215082913.tmp:String) [Remove-
+   Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+Remove-Item : Cannot remove item V:\VM_Backup\CanNotDelete\EP-MG\delete\EP-MG-flat.vmdk.071215084312.tmp: The file or 
+directory is corrupted and unreadable.
+
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (EP-MG-flat.vmdk.071215084312.tmp:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item
+V:\VM_Backup\CanNotDelete\EP-MG\delete\EP-MG-flat.vmdk.071215084312.tmp: The file or directory is
+corrupted and unreadable.
+
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (EP-MG-flat.vmdk.071215084312.tmp:FileInfo) [Remove-Ite
+   m], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveIte
+   mCommand
+Remove-Item : Directory V:\VM_Backup\CanNotDelete\EP-MG\delete cannot be removed because it is not empty.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (V:\VM_Backup\CanNotDelete\EP-MG\delete:DirectoryInfo) [Remove-Item], 
+IOException
+    + FullyQualifiedErrorId : DirectoryNotEmpty,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Directory V:\VM_Backup\CanNotDelete\EP-MG\delete cannot be removed because it is
+not empty.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (V:\VM_Backup\CanNotDelete\EP-MG\delete:DirectoryInfo)
+   [Remove-Item], IOException
+    + FullyQualifiedErrorId : DirectoryNotEmpty,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+Remove-Item : Cannot find path 'V:\VM_Backup\CanNotDelete\EP-MG\delete\EP-MG-flat.vmdk.071215084312.tmp' because it 
+does not exist.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (V:\VM_Backup\Ca...71215084312.tmp:String) [Remove-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot find path
+'V:\VM_Backup\CanNotDelete\EP-MG\delete\EP-MG-flat.vmdk.071215084312.tmp' because it does not
+exist.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (V:\VM_Backup\Ca...71215084312.tmp:String) [Remove-
+   Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+Remove-Item : Cannot remove item V:\VM_Backup\CanNotDelete\FortigateEMS\delete\FortigateEMS-flat.vmdk.071215092112.tmp: 
+The file or directory is corrupted and unreadable.
+
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (FortigateEMS-flat.vmdk.071215092112.tmp:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item
+V:\VM_Backup\CanNotDelete\FortigateEMS\delete\FortigateEMS-flat.vmdk.071215092112.tmp: The file
+or directory is corrupted and unreadable.
+
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (FortigateEMS-flat.vmdk.071215092112.tmp:FileInfo) [Rem
+   ove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveIte
+   mCommand
+Remove-Item : Directory V:\VM_Backup\CanNotDelete\FortigateEMS\delete cannot be removed because it is not empty.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (V:\VM_Backup\Ca...igateEMS\delete:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : DirectoryNotEmpty,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Directory V:\VM_Backup\CanNotDelete\FortigateEMS\delete cannot be removed because
+it is not empty.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (V:\VM_Backup\Ca...igateEMS\delete:DirectoryInfo) [Remo
+   ve-Item], IOException
+    + FullyQualifiedErrorId : DirectoryNotEmpty,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+Remove-Item : Cannot find path 'V:\VM_Backup\CanNotDelete\FortigateEMS\delete\FortigateEMS-flat.vmdk.071215092112.tmp' 
+because it does not exist.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (V:\VM_Backup\Ca...71215092112.tmp:String) [Remove-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot find path
+'V:\VM_Backup\CanNotDelete\FortigateEMS\delete\FortigateEMS-flat.vmdk.071215092112.tmp' because
+it does not exist.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (V:\VM_Backup\Ca...71215092112.tmp:String) [Remove-
+   Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+Remove-Item : Cannot remove item V:\VM_Backup\CanNotDelete\NewSync2012\delete\NewSync2012-flat.vmdk.071215103013.tmp: 
+The file or directory is corrupted and unreadable.
+
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (NewSync2012-flat.vmdk.071215103013.tmp:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item
+V:\VM_Backup\CanNotDelete\NewSync2012\delete\NewSync2012-flat.vmdk.071215103013.tmp: The file or
+directory is corrupted and unreadable.
+
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (NewSync2012-flat.vmdk.071215103013.tmp:FileInfo) [Remo
+   ve-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveIte
+   mCommand
+Remove-Item : Directory V:\VM_Backup\CanNotDelete\NewSync2012\delete cannot be removed because it is not empty.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (V:\VM_Backup\Ca...Sync2012\delete:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : DirectoryNotEmpty,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Directory V:\VM_Backup\CanNotDelete\NewSync2012\delete cannot be removed because it
+is not empty.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (V:\VM_Backup\Ca...Sync2012\delete:DirectoryInfo) [Remo
+   ve-Item], IOException
+    + FullyQualifiedErrorId : DirectoryNotEmpty,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+Remove-Item : Cannot find path 'V:\VM_Backup\CanNotDelete\NewSync2012\delete\NewSync2012-flat.vmdk.071215103013.tmp' 
+because it does not exist.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (V:\VM_Backup\Ca...71215103013.tmp:String) [Remove-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot find path
+'V:\VM_Backup\CanNotDelete\NewSync2012\delete\NewSync2012-flat.vmdk.071215103013.tmp' because it
+does not exist.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (V:\VM_Backup\Ca...71215103013.tmp:String) [Remove-
+   Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+Remove-Item : Cannot remove item V:\VM_Backup\FruitServer\delete\FruitServer-flat.vmdk.071215094212.tmp: The file or 
+directory is corrupted and unreadable.
+
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (FruitServer-flat.vmdk.071215094212.tmp:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item
+V:\VM_Backup\FruitServer\delete\FruitServer-flat.vmdk.071215094212.tmp: The file or directory is
+corrupted and unreadable.
+
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (FruitServer-flat.vmdk.071215094212.tmp:FileInfo) [Remo
+   ve-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveIte
+   mCommand
+Remove-Item : Directory V:\VM_Backup\FruitServer\delete cannot be removed because it is not empty.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (V:\VM_Backup\FruitServer\delete:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : DirectoryNotEmpty,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Directory V:\VM_Backup\FruitServer\delete cannot be removed because it is not empty.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (V:\VM_Backup\FruitServer\delete:DirectoryInfo) [Remove
+   -Item], IOException
+    + FullyQualifiedErrorId : DirectoryNotEmpty,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+Remove-Item : Cannot find path 'V:\VM_Backup\FruitServer\delete\FruitServer-flat.vmdk.071215094212.tmp' because it does 
+not exist.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (V:\VM_Backup\Fr...71215094212.tmp:String) [Remove-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot find path
+'V:\VM_Backup\FruitServer\delete\FruitServer-flat.vmdk.071215094212.tmp' because it does not
+exist.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (V:\VM_Backup\Fr...71215094212.tmp:String) [Remove-
+   Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+**********************
+Windows PowerShell transcript end
+End time: 20180708223654
+**********************

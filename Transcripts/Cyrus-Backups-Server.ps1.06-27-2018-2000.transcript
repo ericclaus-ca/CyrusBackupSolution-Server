@@ -1,0 +1,201 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180627200001
+Username: CYRUS1\Administrator
+RunAs User: CYRUS1\Administrator
+Machine: CYRUS1 (Microsoft Windows NT 10.0.14393.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE C:\Scripts\Cyrus-Backup-Server\Cyrus-Backups-Server.ps1
+Process ID: 16116
+PSVersion: 5.1.14393.206
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14393.206
+BuildVersion: 10.0.14393.206
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Scripts\Cyrus-Backup-Server\Transcripts\Cyrus-Backups-Server.ps1.06-27-2018-2000.transcript
+
+
+Path          : \\localhost\root\cimv2:Win32_Volume.DeviceID="\\\\?\\Volume{9aafdd9d-0000-0000-000
+                0-800000000000}\\"
+RelativePath  : Win32_Volume.DeviceID="\\\\?\\Volume{9aafdd9d-0000-0000-0000-800000000000}\\"
+Server        : localhost
+NamespacePath : root\cimv2
+ClassName     : Win32_Volume
+IsClass       : False
+IsInstance    : True
+IsSingleton   : False
+
+Path          : \\localhost\root\cimv2:Win32_Volume.DeviceID="\\\\?\\Volume{9aafdd9d-0000-0000-009
+                0-a80cf9010000}\\"
+RelativePath  : Win32_Volume.DeviceID="\\\\?\\Volume{9aafdd9d-0000-0000-0090-a80cf9010000}\\"
+Server        : localhost
+NamespacePath : root\cimv2
+ClassName     : Win32_Volume
+IsClass       : False
+IsInstance    : True
+IsSingleton   : False
+
+CurrentLocation :
+Name            : tempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+Backing up files modifed since: 06/26/2018 20:04:04
+Get-ChildItem : Could not find a part of the path '\\192.168.90.92\d$\NASShare\home\CONERLKE\conerlke\Google 
+Drive\.Registrar Documents\Documents 10.26.12\General 10.26.12\ICE_INS\Tennessee Field Representative Changes - 
+conerlke@collegedaleacademy.com - Collegedale Academy Mail_files\rsAItRSTP5iGQLsj3c9JM_Gcy5bGwPqJAQJw_data'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:92 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...bGwPqJAQJw_data:String) [Get-ChildItem], 
+DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Could not find a part of the path
+'\\192.168.90.92\d$\NASShare\home\CONERLKE\conerlke\Google Drive\.Registrar Documents\Documents
+10.26.12\General 10.26.12\ICE_INS\Tennessee Field Representative Changes -
+conerlke@collegedaleacademy.com - Collegedale Academy
+Mail_files\rsAItRSTP5iGQLsj3c9JM_Gcy5bGwPqJAQJw_data'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:92 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...bGwPqJAQJw_data:String) [Get-ChildIte
+   m], DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+Get-ChildItem : Could not find a part of the path '\\192.168.90.92\d$\NASShare\home\jancion\Backpup files from Julian's 
+PC\inari_boy\Workspace\Repo\WimLive\public\testfiles\Plain-Text-Countdown-Timer-with-jQuery-Moment-js-Countdown-Clock\Pl
+ain-Text-Countdown-Timer-with-jQuery-Moment-js-Countdown-Clock\examples'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:92 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...-Clock\examples:String) [Get-ChildItem], 
+DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Could not find a part of the path
+'\\192.168.90.92\d$\NASShare\home\jancion\Backpup files from Julian's PC\inari_boy\Workspace\Repo\
+WimLive\public\testfiles\Plain-Text-Countdown-Timer-with-jQuery-Moment-js-Countdown-Clock\Plain-Te
+xt-Countdown-Timer-with-jQuery-Moment-js-Countdown-Clock\examples'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:92 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...-Clock\examples:String) [Get-ChildIte
+   m], DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+Get-ChildItem : Access to the path '\\192.168.90.92\d$\NASShare\home\mlavertue' is denied.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:92 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (\\192.168.90.92...\home\mlavertue:String) [Get-ChildItem], 
+UnauthorizedAccessException
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Access to the path '\\192.168.90.92\d$\NASShare\home\mlavertue' is denied.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:92 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (\\192.168.90.92...\home\mlavertue:String) [Get-C
+   hildItem], UnauthorizedAccessException
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIt
+   emCommand
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+**********************
+Windows PowerShell transcript end
+End time: 20180627204341
+**********************

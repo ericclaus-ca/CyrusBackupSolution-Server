@@ -1,0 +1,351 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180713200002
+Username: CYRUS1\Administrator
+RunAs User: CYRUS1\Administrator
+Machine: CYRUS1 (Microsoft Windows NT 10.0.14393.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE C:\Scripts\Cyrus-Backup-Server\Cyrus-Backups-Server.ps1
+Process ID: 14440
+PSVersion: 5.1.14393.206
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.14393.206
+BuildVersion: 10.0.14393.206
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Scripts\Cyrus-Backup-Server\Transcripts\Cyrus-Backups-Server.ps1.07-13-2018-2000.transcript
+
+
+Path          : \\localhost\root\cimv2:Win32_Volume.DeviceID="\\\\?\\Volume{9aafcb0c-0000-0000-000
+                0-800000000000}\\"
+RelativePath  : Win32_Volume.DeviceID="\\\\?\\Volume{9aafcb0c-0000-0000-0000-800000000000}\\"
+Server        : localhost
+NamespacePath : root\cimv2
+ClassName     : Win32_Volume
+IsClass       : False
+IsInstance    : True
+IsSingleton   : False
+
+Path          : \\localhost\root\cimv2:Win32_Volume.DeviceID="\\\\?\\Volume{9aafcb0c-0000-0000-008
+                0-f2e4e6010000}\\"
+RelativePath  : Win32_Volume.DeviceID="\\\\?\\Volume{9aafcb0c-0000-0000-0080-f2e4e6010000}\\"
+Server        : localhost
+NamespacePath : root\cimv2
+ClassName     : Win32_Volume
+IsClass       : False
+IsInstance    : True
+IsSingleton   : False
+
+CurrentLocation :
+Name            : tempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+Get-ChildItem : Could not find a part of the path '\\192.168.90.92\d$\NASShare\home\CONERLKE\conerlke\Google 
+Drive\.Registrar Documents\Documents 10.26.12\General 10.26.12\ICE_INS\Tennessee Field Representative Changes - 
+conerlke@collegedaleacademy.com - Collegedale Academy Mail_files\rsAItRSTP5iGQLsj3c9JM_Gcy5bGwPqJAQJw_data'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...bGwPqJAQJw_data:String) [Get-ChildItem], 
+DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Could not find a part of the path
+'\\192.168.90.92\d$\NASShare\home\CONERLKE\conerlke\Google Drive\.Registrar Documents\Documents
+10.26.12\General 10.26.12\ICE_INS\Tennessee Field Representative Changes -
+conerlke@collegedaleacademy.com - Collegedale Academy
+Mail_files\rsAItRSTP5iGQLsj3c9JM_Gcy5bGwPqJAQJw_data'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...bGwPqJAQJw_data:String) [Get-ChildIte
+   m], DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+Get-ChildItem : Could not find a part of the path '\\192.168.90.92\d$\NASShare\home\jancion\Backpup files from Julian's 
+PC\inari_boy\Workspace\Repo\WimLive\public\testfiles\Plain-Text-Countdown-Timer-with-jQuery-Moment-js-Countdown-Clock\Pl
+ain-Text-Countdown-Timer-with-jQuery-Moment-js-Countdown-Clock\examples'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...-Clock\examples:String) [Get-ChildItem], 
+DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Could not find a part of the path
+'\\192.168.90.92\d$\NASShare\home\jancion\Backpup files from Julian's PC\inari_boy\Workspace\Repo\
+WimLive\public\testfiles\Plain-Text-Countdown-Timer-with-jQuery-Moment-js-Countdown-Clock\Plain-Te
+xt-Countdown-Timer-with-jQuery-Moment-js-Countdown-Clock\examples'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...-Clock\examples:String) [Get-ChildIte
+   m], DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+Get-ChildItem : Could not find a part of the path '\\192.168.90.92\d$\NASShare\home\jancion\Djernes Drive\djernesd.AD\Ap
+pData\Local\Spotify\Data\05\5.0\Providers\Plugins2\WRLiloPlugin1.2\AMT\Roaming\11.00\Protect\1033\Saved 
+Games\ARCTIC\Pictures\NVIDIA Corporation\3D Vision Experience\3D Vision preview pack 1'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92... preview pack 1:String) [Get-ChildItem], 
+DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Could not find a part of the path
+'\\192.168.90.92\d$\NASShare\home\jancion\Djernes Drive\djernesd.AD\AppData\Local\Spotify\Data\05\
+5.0\Providers\Plugins2\WRLiloPlugin1.2\AMT\Roaming\11.00\Protect\1033\Saved
+Games\ARCTIC\Pictures\NVIDIA Corporation\3D Vision Experience\3D Vision preview pack 1'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92... preview pack 1:String) [Get-ChildIte
+   m], DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+Get-ChildItem : Could not find a part of the path '\\192.168.90.92\d$\NASShare\home\jancion\Djernes Drive\djernesd.AD\Ap
+pData\Local\Spotify\Data\05\5.0\Providers\Plugins2\WRLiloPlugin1.2\AMT\Roaming\11.00\Protect\1033\Saved 
+Games\ECLIPSE\Fonts\AMT\zh_TW\Help\en-US\fr_XM\ESENT\0409\FlashLite\FL40\0409\Fp101\0000'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...0409\Fp101\0000:String) [Get-ChildItem], 
+DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Could not find a part of the path
+'\\192.168.90.92\d$\NASShare\home\jancion\Djernes Drive\djernesd.AD\AppData\Local\Spotify\Data\05\
+5.0\Providers\Plugins2\WRLiloPlugin1.2\AMT\Roaming\11.00\Protect\1033\Saved
+Games\ECLIPSE\Fonts\AMT\zh_TW\Help\en-US\fr_XM\ESENT\0409\FlashLite\FL40\0409\Fp101\0000'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...0409\Fp101\0000:String) [Get-ChildIte
+   m], DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+Get-ChildItem : Could not find a part of the path '\\192.168.90.92\d$\NASShare\home\jancion\Djernes Drive\djernesd.AD\Ap
+pData\Local\Spotify\Data\05\5.0\Providers\Plugins2\WRLiloPlugin1.2\AMT\Roaming\11.00\Protect\1033\Saved 
+Games\ECLIPSE\Installer\$PatchCache$\Managed\00006109110000000000000000F01FEC\16.0.4266'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...01FEC\16.0.4266:String) [Get-ChildItem], 
+DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Could not find a part of the path
+'\\192.168.90.92\d$\NASShare\home\jancion\Djernes Drive\djernesd.AD\AppData\Local\Spotify\Data\05\
+5.0\Providers\Plugins2\WRLiloPlugin1.2\AMT\Roaming\11.00\Protect\1033\Saved
+Games\ECLIPSE\Installer\$PatchCache$\Managed\00006109110000000000000000F01FEC\16.0.4266'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...01FEC\16.0.4266:String) [Get-ChildIte
+   m], DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+Get-ChildItem : Could not find a part of the path '\\192.168.90.92\d$\NASShare\home\jancion\Djernes Drive\djernesd.AD\Ap
+pData\Local\Spotify\Data\05\5.0\Providers\Plugins2\WRLiloPlugin1.2\AMT\Roaming\11.00\Protect\1033\Saved 
+Games\ECLIPSE\Installer\$PatchCache$\Managed\68AB67CA7DA73301B744CAF070E41400\15.7.20033'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...1400\15.7.20033:String) [Get-ChildItem], 
+DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Could not find a part of the path
+'\\192.168.90.92\d$\NASShare\home\jancion\Djernes Drive\djernesd.AD\AppData\Local\Spotify\Data\05\
+5.0\Providers\Plugins2\WRLiloPlugin1.2\AMT\Roaming\11.00\Protect\1033\Saved
+Games\ECLIPSE\Installer\$PatchCache$\Managed\68AB67CA7DA73301B744CAF070E41400\15.7.20033'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...1400\15.7.20033:String) [Get-ChildIte
+   m], DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+Get-ChildItem : Could not find a part of the path '\\192.168.90.92\d$\NASShare\home\jancion\Djernes Drive\djernesd.AD\Ap
+pData\Local\Spotify\Data\05\5.0\Providers\Plugins2\WRLiloPlugin1.2\AMT\Roaming\11.00\Protect\1033\Saved 
+Games\ECLIPSE\Installer\$PatchCache$\Managed\C3257C0EB6866EE3F81BBC34933EE0DD\4.7.2558'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...3EE0DD\4.7.2558:String) [Get-ChildItem], 
+DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Could not find a part of the path
+'\\192.168.90.92\d$\NASShare\home\jancion\Djernes Drive\djernesd.AD\AppData\Local\Spotify\Data\05\
+5.0\Providers\Plugins2\WRLiloPlugin1.2\AMT\Roaming\11.00\Protect\1033\Saved
+Games\ECLIPSE\Installer\$PatchCache$\Managed\C3257C0EB6866EE3F81BBC34933EE0DD\4.7.2558'.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\192.168.90.92...3EE0DD\4.7.2558:String) [Get-ChildIte
+   m], DirectoryNotFoundException
+    + FullyQualifiedErrorId : DirIOError,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+Get-ChildItem : Access to the path '\\192.168.90.92\d$\NASShare\home\mlavertue' is denied.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (\\192.168.90.92...\home\mlavertue:String) [Get-ChildItem], 
+UnauthorizedAccessException
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Access to the path '\\192.168.90.92\d$\NASShare\home\mlavertue' is denied.
+At C:\Scripts\Cyrus-Backup-Server\Backup-NAS1.ps1:103 char:9
++         Get-ChildItem $source -Recurse -File |              # Get a l ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (\\192.168.90.92...\home\mlavertue:String) [Get-C
+   hildItem], UnauthorizedAccessException
+    + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildIt
+   emCommand
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+Remove-Item : Cannot remove item V:\VM_Backup\FruitServer\delete\FruitServer-flat.vmdk.071215094212.tmp: The file or 
+directory is corrupted and unreadable.
+
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (FruitServer-flat.vmdk.071215094212.tmp:FileInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot remove item
+V:\VM_Backup\FruitServer\delete\FruitServer-flat.vmdk.071215094212.tmp: The file or directory is
+corrupted and unreadable.
+
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (FruitServer-flat.vmdk.071215094212.tmp:FileInfo) [Remo
+   ve-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveIte
+   mCommand
+Remove-Item : Directory V:\VM_Backup\FruitServer\delete cannot be removed because it is not empty.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (V:\VM_Backup\FruitServer\delete:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : DirectoryNotEmpty,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Directory V:\VM_Backup\FruitServer\delete cannot be removed because it is not empty.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (V:\VM_Backup\FruitServer\delete:DirectoryInfo) [Remove
+   -Item], IOException
+    + FullyQualifiedErrorId : DirectoryNotEmpty,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+Remove-Item : Cannot find path 'V:\VM_Backup\FruitServer\delete\FruitServer-flat.vmdk.071215094212.tmp' because it does 
+not exist.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (V:\VM_Backup\Fr...71215094212.tmp:String) [Remove-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot find path
+'V:\VM_Backup\FruitServer\delete\FruitServer-flat.vmdk.071215094212.tmp' because it does not
+exist.
+At C:\Scripts\Cyrus-Backup-Server\Cleanup-Backups.ps1:81 char:10
++             Remove-Item -LiteralPath $File.FullName -Recurse
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (V:\VM_Backup\Fr...71215094212.tmp:String) [Remove-
+   Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+CurrentLocation :
+Name            : myTempSource
+Provider        : Microsoft.PowerShell.Core\FileSystem
+Root            : \\192.168.90.92\d$\NASShare
+Description     :
+MaximumSize     :
+Credential      : System.Management.Automation.PSCredential
+DisplayRoot     :
+Used            : 0
+Free            :
+
+**********************
+Windows PowerShell transcript end
+End time: 20180715113634
+**********************

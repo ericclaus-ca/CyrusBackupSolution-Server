@@ -72,7 +72,7 @@
     $source = "tempSource:\"
     
     # Files/folders to exclude from being backed up, regular expression
-    $exclude = "\\home\\mlavertue|\\ICE_INS\\|\\Overall Desktop A\\Corsair\\|\\yearbook\\backup 2017|\\yearbook\\backup 2016|\\CONERLKE\\conerlke\\Google Drive\\|conerlke\\Documents\\Documents 10.26.12\\|\\Backpup files from Julian|02-04-18.tar.gz|\\djernesd.AD\\AppData|\\djernesd\\AppData"
+    $exclude = "\\home\\mlavertue|\\ICE_INS\\|\\Overall Desktop A\\Corsair\\|\\yearbook\\backup 2017|\\yearbook\\backup 2016|\\CONERLKE\\conerlke\\Google Drive\\|conerlke\\Documents\\Documents 10.26.12\\|\\Backpup files from Julian|02-04-18.tar.gz|\\djernesd.AD\\AppData|\\djernesd\\AppData|\\jancion\\Djernes Drive\\|\\djernesd1.old\\"
     
     # Get the password to encrypt the backup with
     $nasBackupZipPassword = (Get-SecurePassword -PwdFile "$PSScriptRoot\455799013").Password
@@ -84,14 +84,14 @@
         $backupLog = "$destination\BackupLog-INCREMENTAL-$date.txt"
         
         # Get the creation time of the most recent backup
-        $lastWrite = (Get-ChildItem -Path $destination -Filter "NASShare-*").CreationTime | Sort-Object | Select-Object -Last 1
-        Write-Output "Backing up files modifed since: $lastWrite"
+        $lastWrite = (Get-ChildItem -Path $destination -Filter "NASShare-*").CreationTime | Sort | Select -Last 1
+        echo "Backing up files modifed since: $lastWrite"
     
         $destinationFile = "$destination\NASShare-INCREMENTAL-$date.7z"
         
         Get-ChildItem $source -Recurse -File |              # Get a list of files in the backup source folder
             Where-Object {$_.FullName -notmatch $exclude} | # Filter out the items listed in the exclude list above
-            Where-Object {$_.LastWriteTime -ge "$LastWrite"} |     # Only get the files that have been modified since the last backup
+            Where {$_.LastWriteTime -ge "$LastWrite"} |     # Only get the files that have been modified since the last backup
             % {$_.FullName} |                               # Get their full path names
             Compress-7Zip -Format SevenZip -ArchiveFileName $destinationFile -SecurePassword $nasBackupZipPassword -CompressionLevel $compressionLevel
     }
